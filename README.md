@@ -1,75 +1,41 @@
-# Nuxt Minimal Starter
+# Тестовое задание
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Инструкция по запуску приложения
 
-## Setup
+### Требования
+-  Nuxt 3
 
-Make sure to install dependencies:
+### Запуск
 
-```bash
-# npm
-npm install
+Для запуска приложения необходимо последовательно запустить команды 
 
-# pnpm
-pnpm install
+npm run instal
 
-# yarn
-yarn install
+#### Для запуска в dev режиме
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
+Далее перейти на страницу http://localhost:5173/
 
-# yarn
-yarn dev
+#### Для production сборки
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
 
-# pnpm
-pnpm preview
+Далее перейти на страницу http://localhost:4173/
 
-# yarn
-yarn preview
+### Настройка 
 
-# bun
-bun run preview
-```
+В src/config.ts можно настроить путь к API серверу. По умолчанию стоит http://localhost:8000/api
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Основные модули
+
+- Используем библиотеку Swiper для реализации слайдера.
+- Модальное окно — общее для кнопок «Связаться» и «Заказать».
+- При вызове модального окна из калькулятора в него добавляется текст:
+
+Калькулятор:
+- Опции в селекторах можно заполнить произвольно.
+- Стоимость каждой опции также задается произвольно.
+- Итоговая сумма должна рассчитываться как сумма всех выбранных пунктов.
